@@ -1,4 +1,4 @@
-baseurl             = "/"   # Your domain name. Must end with "/"
+baseurl             = "https://unbel.github.io/opop/public/"   # Your domain name. Must end with "/"
 languageCode        = "en-us"
 title               = "Introduction"
 theme               = "introduction"
