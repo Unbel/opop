@@ -55,3 +55,6 @@ canonifyurls        = true                          # Turns relative urls into a
 [[params.social]]
     url = "https://linkedin.com/"
     icon = "linkedin"
+[[params.social]]
+        url = "https://vk.com/"
+        icon = "vk"
