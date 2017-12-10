@@ -1,8 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Unbel/opop # Path to your Github repository
+  branch: master # Branch to update (master by default)
 
 media_folder: "site/static/img" # Folder where user uploaded files should go
-public_folder: "img"
+public_folder: "public"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
