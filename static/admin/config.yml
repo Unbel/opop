@@ -1,7 +1,10 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-publish_mode: editorial_workflow
+  name: github
+  repo: Unbel/opop # Path to your Github repository
+  branch: master # Branch to update
+
+
+
 media_folder: "static/img/" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -22,3 +25,35 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "string"}
       - {label: "keywords", name: "keywords", widget: "string"}
+
+
+
+collections:
+  - name: "recipe" # Used in routes, e.g. /admin/collections/recipe
+    label: "Recipe" # Used in the UI
+    folder: "src/site/content/recipe" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template i.e. title.md
+    fields: # The fields for each document, usually in front matter#
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "recipe"}
+      - {label: "Description", name: "description", widget: "text"}
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - {label: "Text", name: "text", widget: "string"}
+          - {label: "URL", name: "url", widget: "image"}
+      - label: "Ingredients"
+        name: "ingredients"
+        widget: "list"
+        fields:
+          - label: "Ingredient"
+            name: "ingredient"
+            widget: "object"
+            fields:
+              - {label: "Amount", name: "amount", widget: "number"}
+              - {label: "Unit", name: "unit", widget: "select", options: ["", "dl", "l", "kg"]}
+              - {label: "Name", name: "name", widget: "string"}
+- {label: "Body", name: "body", widget: "markdown"}
