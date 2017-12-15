@@ -1,11 +1,12 @@
 ---
-title: "Photography"
-date: 2017-11-13T12:21:21-05:00
-image: "img/camera.jpg"
-external_link: ""
+title: вввввв
+date: 2017-11-13T17:21:21.000Z
+external_link: ''
+image: img/camera.jpg
+thumbnail: /img/fbsbltc.gif
+rating: '4'
 weight: 1
 ---
+ааааааааааааааааааааааааааааааааааааааааааааааааааааааааааа
 
-## Sometimes I take pictures.
-
-This project is about the pictures I take. Sometimes, they are pictures of cats.
+ппппппппппппппп
