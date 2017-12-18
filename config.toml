@@ -13,8 +13,8 @@
 # use grunt task `build` to synchronize assets
 
 baseURL = "/"
-languageCode = "en-us"
-defaultContentLanguage = "en-us"
+languageCode = "ru"
+defaultContentLanguage = "ru"
 title = "Hugo tranquilpeak theme"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
