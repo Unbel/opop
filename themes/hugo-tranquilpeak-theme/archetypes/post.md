@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "{{  title }}"
 date: {{ .Date }}
 categories:
 - category
