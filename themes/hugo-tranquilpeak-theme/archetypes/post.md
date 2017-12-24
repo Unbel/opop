@@ -1,5 +1,5 @@
 ---
-title: "{{ replace .File.BaseFileName "-" " " | title }}"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 categories:
 - category
@@ -11,8 +11,3 @@ keywords:
 - tech
 #thumbnailImage: //example.com/image.jpg
 ---
-
-<!--more-->
-
-
-<!--TranslationBaseName-->
