@@ -23,7 +23,7 @@ paginate = 7
 canonifyurls = true
 
 [permalinks]
-  post = ":year-:month-:day-:{{ replace .TranslationBaseName "-" " " | title }}/"
+  post = ":year-:month-:day-:title.TranslationBaseName/"
 
 [taxonomies]
   tag = "tags"
