@@ -1,8 +1,16 @@
 ---
-layout: blog
-title: Сновановыйпост
-date: 2017-12-24T21:32:05.705Z
-thumbnail: /static/img/1_1330075925.jpg
-postname: постимя
+title: "ПОСТАФАРИАН"
+date: 2015-03-23
+categories:
+  - tranquilpeak
+  - features
+tags:
+  - highlight code
+  - github theme
+  - test
+thumbnailImagePosition: left
+thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg
 ---
+пост191217
+
 пост

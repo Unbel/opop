@@ -6,7 +6,7 @@ backend:
 
 
 media_folder: "static/img/" # Media files will be stored in the repo under static/images/uploads
-public_folder: "static/img" # The src attribute for uploaded media will begin with /images/uploads
+public_folder: "static/img/" # The src attribute for uploaded media will begin with /images/uploads
 
 
 collections:
@@ -16,7 +16,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      #- {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
@@ -35,9 +35,8 @@ collections:
       - highlight code
       - github theme
       - test
-    thumbnailImagePosition: left
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "ImagePosition:", name: "thumbnailImagePosition:", widget: "hidden", default: "left"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnailImage", widget: "image"}
